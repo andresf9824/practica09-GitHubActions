@@ -18,5 +18,11 @@ jobs:
                 ls -la
                 cat /etc/os-release
         shell: bash
+        - name: Display the processor
+        run: |
+          import platform
+          print (platform.processor())
+        shell: python
+
 
 
